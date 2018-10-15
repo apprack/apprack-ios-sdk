@@ -1,0 +1,6 @@
+framework module APRFramework {
+  umbrella header "APRFramework.h"
+
+  export *
+  module * { export * }
+}
