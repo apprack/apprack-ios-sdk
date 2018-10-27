@@ -12,8 +12,8 @@
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
     
-    NSString* appKit = @"415a4162-f52a-4b7b-bc02-b582e535dc56";
-    NSString* apiKey = @"4vzHzK6WaUsnonCG715QYQ";
+    NSString* appKit = @"c35398a2-0ad7-43b4-af9d-1ac3f77d6955";
+    NSString* apiKey = @"aEDtVKqs0G0oGY7aSUxpTQ";
     
     [APRAppManager.sharedManager initializeWithAppKit:appKit andApiKey:apiKey];
     [APRAppManager.sharedManager showUpdateAlertOnController: self.window.rootViewController];

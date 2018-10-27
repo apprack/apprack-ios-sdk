@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		204A0D550DB83C46A4EA770D /* Pods_ObjectiveC_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F5EBFB3C0FC8D1296C0508 /* Pods_ObjectiveC_Sample.framework */; };
 		3D0DE32B2139CF09003CE21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DE3222139CF08003CE21D /* LaunchScreen.storyboard */; };
-		3D0DE32C2139CF09003CE21D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DE3242139CF09003CE21D /* Info.plist */; };
 		3D0DE32D2139CF09003CE21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DE3252139CF09003CE21D /* Assets.xcassets */; };
 		3D0DE32E2139CF09003CE21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DE3262139CF09003CE21D /* Main.storyboard */; };
 		3D0DE32F2139CF09003CE21D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0DE3272139CF09003CE21D /* AppDelegate.m */; };
 		3D0DE3302139CF09003CE21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0DE3282139CF09003CE21D /* main.m */; };
 		3D0DE3312139CF09003CE21D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0DE32A2139CF09003CE21D /* ViewController.m */; };
 		3D0DE3332139D285003CE21D /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DE3322139D285003CE21D /* sample.png */; };
+		3DE83E5C2184FB640035832B /* APRFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE83E5B2184FB640035832B /* APRFramework.framework */; };
+		3DE83E5E2184FBBD0035832B /* APRFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE83E5B2184FB640035832B /* APRFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3DE83E5F2184FBBD0035832B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DE83E5E2184FBBD0035832B /* APRFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		15BC92C636B094BC22DDC912 /* libPods-AppRackSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppRackSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0DE3222139CF08003CE21D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "ObjC-Sample/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		3D0DE3232139CF08003CE21D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "ObjC-Sample/ViewController.h"; sourceTree = "<group>"; };
 		3D0DE3242139CF09003CE21D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ObjC-Sample/Info.plist"; sourceTree = "<group>"; };
@@ -32,9 +45,7 @@
 		3D0DE3322139D285003CE21D /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample.png; path = screenshots/sample.png; sourceTree = "<group>"; };
 		3D4C44971F59844E00D64662 /* ObjectiveC-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectiveC-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5D444E1FB63B9B00763C57 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		8C7DA2D447CCD7D146F3F473 /* Pods-ObjectiveC-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC-Sample/Pods-ObjectiveC-Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		D0F5EBFB3C0FC8D1296C0508 /* Pods_ObjectiveC_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveC_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7741019A9FCBBBBC71F4935 /* Pods-ObjectiveC-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC-Sample/Pods-ObjectiveC-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		3DE83E5B2184FB640035832B /* APRFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APRFramework.framework; path = "Framework/APRFramework-Release-iphoneuniversal/APRFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,22 +53,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				204A0D550DB83C46A4EA770D /* Pods_ObjectiveC_Sample.framework in Frameworks */,
+				3DE83E5C2184FB640035832B /* APRFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2655EB624D3F2DAF5EF81E67 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8C7DA2D447CCD7D146F3F473 /* Pods-ObjectiveC-Sample.debug.xcconfig */,
-				E7741019A9FCBBBBC71F4935 /* Pods-ObjectiveC-Sample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		3D4C448E1F59844E00D64662 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +75,6 @@
 				3D0DE3282139CF09003CE21D /* main.m */,
 				3D4C44981F59844E00D64662 /* Products */,
 				9472C6A51C25FF221C6E882C /* Frameworks */,
-				2655EB624D3F2DAF5EF81E67 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,9 +89,8 @@
 		9472C6A51C25FF221C6E882C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DE83E5B2184FB640035832B /* APRFramework.framework */,
 				3D5D444E1FB63B9B00763C57 /* StoreKit.framework */,
-				15BC92C636B094BC22DDC912 /* libPods-AppRackSDK.a */,
-				D0F5EBFB3C0FC8D1296C0508 /* Pods_ObjectiveC_Sample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,11 +102,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D4C44AD1F59844E00D64662 /* Build configuration list for PBXNativeTarget "ObjectiveC-Sample" */;
 			buildPhases = (
-				14DEC9B4A5626FA807827ACF /* [CP] Check Pods Manifest.lock */,
 				3D4C44931F59844E00D64662 /* Sources */,
 				3D4C44941F59844E00D64662 /* Frameworks */,
 				3D4C44951F59844E00D64662 /* Resources */,
-				DE04C7B775DAE372B903C8A4 /* [CP] Embed Pods Frameworks */,
+				3DE83E5F2184FBBD0035832B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +156,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0DE32C2139CF09003CE21D /* Info.plist in Resources */,
 				3D0DE32D2139CF09003CE21D /* Assets.xcassets in Resources */,
 				3D0DE32B2139CF09003CE21D /* LaunchScreen.storyboard in Resources */,
 				3D0DE32E2139CF09003CE21D /* Main.storyboard in Resources */,
@@ -166,45 +164,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		14DEC9B4A5626FA807827ACF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ObjectiveC-Sample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE04C7B775DAE372B903C8A4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ObjectiveC-Sample/Pods-ObjectiveC-Sample-frameworks.sh",
-				"${PODS_ROOT}/apprack-SDK/Output/APRFramework-Release-iphoneuniversal/APRFramework.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APRFramework.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectiveC-Sample/Pods-ObjectiveC-Sample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D4C44931F59844E00D64662 /* Sources */ = {
@@ -328,7 +287,6 @@
 		};
 		3D4C44AE1F59844E00D64662 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C7DA2D447CCD7D146F3F473 /* Pods-ObjectiveC-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +294,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework/APRFramework-Release-iphoneuniversal",
 				);
 				INFOPLIST_FILE = "ObjC-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -347,7 +306,6 @@
 		};
 		3D4C44AF1F59844E00D64662 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7741019A9FCBBBBC71F4935 /* Pods-ObjectiveC-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +313,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework/APRFramework-Release-iphoneuniversal",
 				);
 				INFOPLIST_FILE = "ObjC-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -15,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let appKit = "415a4162-f52a-4b7b-bc02-b582e535dc56"
-        let apiKey = "4vzHzK6WaUsnonCG715QYQ"
+        let appKit = "c35398a2-0ad7-43b4-af9d-1ac3f77d6955"
+        let apiKey = "aEDtVKqs0G0oGY7aSUxpTQ"
         
         APRAppManager.shared().initialize(withAppKit: appKit, andApiKey: apiKey)
         
