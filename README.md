@@ -103,10 +103,14 @@ To do this just call `-initializeWithAppKit:andApiKey:` in `-application:didFini
 #import <APRFramework/APRFramework.h>
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
+
+	// the ids for your app can be found on your apprack.io dashbaord in the SDK section
     NSString* appKit = @"415a4162-f52a-4b7b-bc02-b582e535dc56";
     NSString* apiKey = @"4vzHzK6WaUsnonCG715QYQ";
+	
     [APRAppManager.sharedManager initializeWithAppKit:appKit andApiKey:apiKey];
-    return YES;
+    
+	return YES;
 }
 ```
 
@@ -115,10 +119,14 @@ To do this just call `-initializeWithAppKit:andApiKey:` in `-application:didFini
 import APRFramework
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	
+    // the ids for your app can be found on your apprack.io dashbaord in the SDK section
     let appKit = "415a4162-f52a-4b7b-bc02-b582e535dc56"
     let apiKey = "4vzHzK6WaUsnonCG715QYQ"
-    APRAppManager.shared().initialize(withAppKit: appKit, andApiKey: apiKey)
-    return true
+    
+	APRAppManager.shared().initialize(withAppKit: appKit, andApiKey: apiKey)
+    
+	return true
 }
 ```
 
