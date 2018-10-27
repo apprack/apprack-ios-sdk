@@ -230,7 +230,7 @@ UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 44,
 imageView.image = [UIImage imageNamed:@"sample"];
 [imageView.heightAnchor constraintEqualToConstant:44].active = YES;
 [imageView.widthAnchor constraintEqualToConstant:44].active = YES;
-[settingsController addView:imageView];
+[settingsController addCustomView:imageView];
 
 [settingsController addCellWithTitle:@"Title Text" accessoryText:@"Accessory Text" andCallbackHandler:^{
     NSLog(@"Do something on selection.");
@@ -263,7 +263,7 @@ let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
 imageView.image = UIImage(named: "sample")
 imageView.heightAnchor.constraint(equalToConstant: 44).isActive = true
 imageView.widthAnchor.constraint(equalToConstant: 44).isActive = true
-settingsController.addView(imageView)
+settingsController.addCustomView(imageView)
 
 settingsController.addCell(withTitle: "Title Text", accessoryText: "Accessory Text") {
     print("Do something on selection.")

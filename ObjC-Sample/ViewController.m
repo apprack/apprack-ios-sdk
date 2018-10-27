@@ -42,7 +42,7 @@
     imageView.image = [UIImage imageNamed:@"sample"];
     [imageView.heightAnchor constraintEqualToConstant:44].active = YES;
     [imageView.widthAnchor constraintEqualToConstant:44].active = YES;
-    [settingsController addView:imageView];
+    [settingsController addCustomView:imageView];
     
     [settingsController addCellWithTitle:@"Title Text" accessoryText:@"Accessory Text" andCallbackHandler:^{
         NSLog(@"Do something on selection.");

@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: "sample")
         imageView.heightAnchor.constraint(equalToConstant: 44).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 44).isActive = true
-        settingsController.addView(imageView)
+        settingsController.addCustomView(imageView)
         
         settingsController.addCell(withTitle: "Title Text", accessoryText: "Accessory Text") {
             print("Do something on selection.")
