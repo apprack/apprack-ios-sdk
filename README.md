@@ -104,13 +104,13 @@ To do this just call `-initializeWithAppKit:andApiKey:` in `-application:didFini
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
 
-	// the ids for your app can be found on your apprack.io dashbaord in the SDK section
+    // the ids for your app can be found on your apprack.io dashbaord in the SDK section
     NSString* appKit = @"415a4162-f52a-4b7b-bc02-b582e535dc56";
     NSString* apiKey = @"4vzHzK6WaUsnonCG715QYQ";
 	
     [APRAppManager.sharedManager initializeWithAppKit:appKit andApiKey:apiKey];
     
-	return YES;
+    return YES;
 }
 ```
 
@@ -124,9 +124,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     let appKit = "415a4162-f52a-4b7b-bc02-b582e535dc56"
     let apiKey = "4vzHzK6WaUsnonCG715QYQ"
     
-	APRAppManager.shared().initialize(withAppKit: appKit, andApiKey: apiKey)
+    APRAppManager.shared().initialize(withAppKit: appKit, andApiKey: apiKey)
     
-	return true
+    return true
 }
 ```
 
