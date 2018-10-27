@@ -8,7 +8,7 @@ Increase the visibility of your app with a beautiful landing page and take your 
 
 ### Focus on your core business and let apprack handle the rest.
 
-The apprack iOS SDK allows to keep focus on your core business by taking over all the screens you need, but don't want to spend time working on, such as screens for terms of use, privacy policy, release notes, settings …
+The apprack iOS SDK allows to keep focus on your core business by taking over all the screens you need, but don't want to spend time working on, such as screens for terms of use, privacy policy, release notes, settings, support form …
 
 All you need to use the SDK is an account on [apprack.io](https://apprack.io).  
 
@@ -28,26 +28,32 @@ You can use the settings controller, which links to all other provided screens. 
 	- Automatically links to your app settings in the iOS settings if your app requests any of the privacy categories (photos, calendar, contacts, …)
 	- Links to the ratings screen in the App Store
 	- Includes version number (also alerts the user whenever there is a new update available)
-	- Links to your social media profiles (Twitter, Facebook, Instagram, …)
-	- Promotes your other apps
-	– Integrates all other screens included in the SDK
+	- Integrates all other screens included in the SDK  
 	- Can be extended using custom sections or completely custom `UIView`s
+	- Sections (such as support form, release notes, legal screens, …) can be disabled/enabled at any time on apprack.io — changes are visible in your app immediatly
+	- Links to your social media profiles (Twitter, Facebook, Instagram, …) _coming soon_  
+	- Promotes your other apps _coming soon_  
 * Support Form
+	- Support messages include debug information automatically (app version, iOS version, device model, …)	
 * Release Notes
-	- Fully automated release notes, always in sync with your App Store releases. apprack.io knows when your version goes live and gets the release notes for the latest version directly from the App Store.
+	- Fully automated release notes, always in sync with your App Store releases. apprack.io knows when your version goes live and gets the release notes for the latest version directly from the App Store
 * Legal Screens
-	- Terms of use
-	- Privacy policy
-	- Imprint
+	- Legal documents can be edited at any time on apprack.io — changes are visible in your app immediatly
+	- Provided Screens:	
+	  - Terms of use
+	  - Privacy policy
+	  - Imprint
+	  - Legal
 	
 ### Features
 
 * Check for available updates
 	- The SDK can check for a newer version on the App Store and ask the user to update
 	- The release notes of the new version can be directly linked to create a greater incentive to update
+	- The feature can be disabled/enabled at any time on apprack.io — changes are visible in your app immediatly
 * Ask for reviews
 	- The SDK can ask the user for an App Store rating and review using the official `SKStoreReviewController` provided by Apple
-	- Use the settings on apprack.io to specify when to prompt your users (by required app launches, days since first install, …)
+	- Use the settings on apprack.io to specify if and when to prompt your users (by required app launches, days since first install, …)
 
 
 ---
@@ -55,16 +61,36 @@ You can use the settings controller, which links to all other provided screens. 
 
 # How do I use it?
 
-We strongly recommend to install the SDK using [CocoaPods](http://cocoapods.org).
+To get a first impression of the SDK checkout this repository and launch the provided sample app. The sample app is provided in Objective-C as well as in Swift.
+
+To integrate it into your app, we strongly recommend to install the SDK using [CocoaPods](http://cocoapods.org).
 
 ## Installing with Cocoapods
 
-The iOS SDK is available through [CocoaPods](http://cocoapods.org).
+The iOS SDK is available through [CocoaPods](http://cocoapods.org), a dependency manager for Cocoa projects.
 
-To install, simply add the following line to your Podfile:
+You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate the SDK into your Xcode project, specify it in your `Podfile`:
 
 ```ruby
-pod 'apprack-io'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'Apprack'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
 ```
 
 ## Authenticate your app
@@ -74,6 +100,8 @@ To do this just call `-initializeWithAppKit:andApiKey:` in `-application:didFini
 
 **Objective-C**  
 ```objc
+#import <APRFramework/APRFramework.h>
+
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
     NSString* appKit = @"415a4162-f52a-4b7b-bc02-b582e535dc56";
     NSString* apiKey = @"4vzHzK6WaUsnonCG715QYQ";
@@ -84,6 +112,8 @@ To do this just call `-initializeWithAppKit:andApiKey:` in `-application:didFini
 
 **Swift**  
 ```swift
+import APRFramework
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let appKit = "415a4162-f52a-4b7b-bc02-b582e535dc56"
     let apiKey = "4vzHzK6WaUsnonCG715QYQ"
