@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "Apprack"
-  s.version          = "1.0.0"
-  s.summary          = "apprack.io iOS SDK provides screens for terms of use, privacy policy, release notes, settings …"
-  s.description      = "The apprack iOS SDK allows to keep focus on your core business by taking over all the screens you need, but don't want to spend time working on, such as screens for terms of use, privacy policy, release notes, settings …"
+  s.version          = "1.0.1"
+  s.summary          = "Apprack provides screens for settings, terms of use, privacy policy, release notes, imprints, support …"
+  s.description      = "Apprack generates your landing page, helps you to become legally compliant and supports you with user engagement. The SDK allows you to keep focusing on your core business by taking over all the screens you need, but don't want to spend time working on (such as screens for terms of use, privacy policy, release notes, settings, support …)"
   s.homepage         = "https://apprack.io"
   s.license          = 'All Rights reserved.'
   s.author           = { "apprack" => "hello@apprack.io" }
