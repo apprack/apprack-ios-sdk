@@ -70,6 +70,14 @@ extern NSString* _Nonnull const APRSDKVersionString;
  UIViewController object to present a support mail form
  */
 @property (nonatomic, strong, readonly) UIViewController* _Nonnull supportViewController;
+/**
+ UIViewController object to present your helpdesk
+ */
+@property (nonatomic, strong, readonly) UIViewController* _Nonnull helpdeskViewController;
+/**
+ UIViewController object to show licenses of libraries you use in your app
+ */
+@property (nonatomic, strong, readonly) UIViewController* _Nonnull licenseViewController;
 
 /**
  Preferred way to access APRAppManager

@@ -146,6 +146,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)addCustomView:(UIView*)view;
 
+/**
+ Resets all custom views.
+ Call @c redrawView afterwards to refresh the display.
+ */
+- (void)resetCustomViews;
+
+/**
+ Redraws the view.
+ Can be used to add new custom views as reaction to a user interaction.
+ */
+- (void)redrawView;
+
 @end
 
 NS_ASSUME_NONNULL_END
