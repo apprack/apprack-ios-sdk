@@ -4,6 +4,10 @@ All notable changes will be documented in this file.
 
 --- 
 
+## [1.1.1](https://github.com/apprack/apprack-ios-sdk/releases/tag/1.1.1) (2019-12-05)
+
+* Minor imporvements and fixes.
+
 ## [1.1.0](https://github.com/apprack/apprack-ios-sdk/releases/tag/1.0.1) (2019-09-22)
 
 * Improved support for iOS 13 Dark Mode.
